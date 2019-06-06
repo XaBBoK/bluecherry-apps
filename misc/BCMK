@@ -51,7 +51,6 @@ libav/config.mak:
 		--enable-version3 \
 		--enable-bzlib \
 		--disable-crystalhd \
-		--enable-gnutls \
 		--enable-ladspa \
 		--enable-libass \
 		--enable-libcdio \

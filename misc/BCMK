@@ -53,7 +53,6 @@ libav/config.mak:
 		--disable-crystalhd \
 		--enable-libcdio \
 		--enable-libdc1394 \
-		--enable-libfdk-aac \
 		--enable-nonfree \
 		--disable-indev=jack \
 		--enable-libfreetype \

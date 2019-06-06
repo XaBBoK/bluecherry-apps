@@ -55,7 +55,6 @@ libav/config.mak:
 		--enable-libdc1394 \
 		--enable-nonfree \
 		--disable-indev=jack \
-		--enable-libgsm \
 		--enable-libmp3lame \
 		--enable-openal \
 		--enable-libopenjpeg \

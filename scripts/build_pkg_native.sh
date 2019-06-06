@@ -4,6 +4,8 @@ set -x
 
 DST_DIR=releases/$DIST/
 
+DIST=centos
+
 # Handy to avoid manual chroots updating and installation of new builddeps
 if [[ $DIST == centos* ]]
 then

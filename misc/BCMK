@@ -44,17 +44,24 @@ secondaries += libav/config.mak $(STAGE)/bin/ffmpeg
 
 libav/config.mak:
 	$(configure) \
-		--cc="$(CC)" \
+        --cc="$(CC)" \
 		--enable-libopencore-amrnb \
 		--enable-libopencore-amrwb \
 		--enable-libvo-amrwbenc \
 		--enable-version3 \
 		--enable-bzlib \
 		--disable-crystalhd \
+		--enable-gnutls \
+		--enable-ladspa \
+		--enable-libass \
 		--enable-libcdio \
 		--enable-libdc1394 \
+		--enable-libfdk-aac \
 		--enable-nonfree \
 		--disable-indev=jack \
+		--enable-libfreetype \
+		--enable-libgsm \
+		--enable-libmp3lame \
 		--enable-openal \
 		--enable-libopenjpeg \
 		--enable-libopus \
@@ -80,7 +87,8 @@ libav/config.mak:
 		--disable-stripping \
 		--enable-runtime-cpudetect \
         --enable-decoder=pcm_mulaw \
-        --enable-decoder=vorbis
+        --enable-decoder=vorbis \
+        --enable-decoder=pcm_mulaw \
 
 
 

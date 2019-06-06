@@ -45,61 +45,49 @@ secondaries += libav/config.mak $(STAGE)/bin/ffmpeg
 libav/config.mak:
 	$(configure) \
 		--cc="$(CC)" \
-		--enable-pic \
+		--enable-libopencore-amrnb \
+		--enable-libopencore-amrwb \
+		--enable-libvo-amrwbenc \
+		--enable-version3 \
+		--enable-bzlib \
+		--disable-crystalhd \
+		--enable-gnutls \
+		--enable-ladspa \
+		--enable-libass \
+		--enable-libcdio \
+		--enable-libdc1394 \
+		--enable-libfdk-aac \
+		--enable-nonfree \
+		--disable-indev=jack \
+		--enable-libfreetype \
+		--enable-libgsm \
+		--enable-libmp3lame \
+		--enable-openal \
+		--enable-libopenjpeg \
+		--enable-libopus \
+		--enable-libpulse \
+		--enable-libschroedinger \
+		--enable-libsoxr \
+		--enable-libspeex \
+		--enable-libtheora \
+		--enable-libvorbis \
+		--enable-libv4l2 \
+		--enable-libx264 \
+		--enable-libx265 \
+		--enable-libxvid \
+		--enable-x11grab \
+		--enable-avfilter \
+		--enable-avresample \
+		--enable-postproc \
+		--enable-pthreads \
+		--disable-static \
+		--enable-shared \
+		--enable-gpl \
+		--disable-debug \
 		--disable-stripping \
-		--disable-doc \
-		\
-		--disable-libxcb \
-		--disable-xlib \
-		--disable-sdl \
-		\
-		--disable-everything \
-		\
-		--enable-indev=v4l2 \
-		\
-		--enable-protocol=file \
-		--enable-protocol=pipe \
-		--enable-protocol=http \
-		--enable-protocol=https \
-		\
-		--enable-muxer=matroska \
-		--enable-muxer=mjpeg \
-		--enable-muxer=rtp \
-		--enable-muxer=mp4 \
-		--enable-muxer=image2 \
-		--enable-muxer=rawvideo \
-		\
-		--enable-demuxer=rtsp \
-		--enable-demuxer=matroska \
-		--enable-demuxer=mjpeg \
-		--enable-demuxer=rawvideo \
-		--enable-demuxer=concat \
-		\
-		--enable-decoder=h264 \
-		--enable-decoder=mpeg4 \
-		--enable-decoder=mjpeg \
-		--enable-decoder=rawvideo \
-		--enable-decoder=aac \
-		--enable-decoder=ac3 \
-		--enable-decoder=mp2 \
-		--enable-decoder=mp3 \
-		--enable-decoder=wav \
-		--enable-decoder=pcm_f32le \
-		--enable-decoder=pcm_f64le \
-		--enable-decoder=pcm_s16le \
-		\
-		--enable-parser=h264 \
-		--enable-parser=mpeg4video \
-		--enable-parser=mjpeg \
-		\
-		--enable-encoder=mjpeg \
-		--enable-encoder=mpeg4 \
-		--enable-encoder=rawvideo \
-		--enable-encoder=aac \
-		\
-		--enable-filter=scale \
-		--enable-filter=fps \
-		\
+		--enable-runtime-cpudetect \
+        --enable-decoder=pcm_mulaw \
+        --enable-decoder=vorbis
 
 
 

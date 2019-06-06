@@ -51,7 +51,6 @@ libav/config.mak:
 		--enable-version3 \
 		--enable-bzlib \
 		--disable-crystalhd \
-		--enable-libass \
 		--enable-libcdio \
 		--enable-libdc1394 \
 		--enable-libfdk-aac \

@@ -282,12 +282,15 @@ int media_writer::open(const std::string &path, const stream_properties &propert
 	video_st->codec->time_base = bkp_ts;
 
 	if (properties.has_audio()) {
+        bc_log(Warning, "Trying to sync with audio in file [%s], ignoring ...", path.c_str());
+        /*
 		audio_st = avformat_new_stream(oc, NULL);
 		if (!audio_st)
 			goto error;
 		bkp_ts = audio_st->codec->time_base;
 		properties.audio.apply(audio_st->codec);
 		audio_st->codec->time_base = bkp_ts;
+        */
 	}
 
 	if (oc->oformat->flags & AVFMT_GLOBALHEADER) {

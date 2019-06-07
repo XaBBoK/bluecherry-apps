@@ -287,10 +287,8 @@ int media_writer::open(const std::string &path, const stream_properties &propert
 		audio_st = avformat_new_stream(oc, NULL);
 		if (!audio_st)
 			goto error;
-		//bkp_ts = audio_st->codec->time_base;
-        properties.audio.apply(audio_st->codec);
-        audio_st->codec->codec_id = AV_CODEC_ID_VORBIS;
-		
+		bkp_ts = audio_st->codec->time_base;
+        properties.audio.apply(audio_st->codec);		
 		audio_st->codec->time_base = bkp_ts;
 	}
 

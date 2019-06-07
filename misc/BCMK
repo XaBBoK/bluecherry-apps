@@ -75,7 +75,7 @@ libav/config.mak:
 		--enable-libx264 \
 		--enable-libx265 \
 		--enable-libxvid \
-		--enable-x11grab \
+		--enable-libxcb \
 		--enable-avfilter \
 		--enable-avresample \
 		--enable-postproc \
